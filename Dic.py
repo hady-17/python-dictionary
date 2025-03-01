@@ -14,7 +14,11 @@ def count_word_freq(sent):
         else:
             freq_dict[word]=1
     return freq_dict
-
+def count_total_employees(comEmp):
+    total=0
+    for dep in comEmp.values():
+        total+=len(dep)
+    return total
 
 dict1={"a":1,"b":2,"c":3}
 dict2={"b":10,"d":4}
@@ -22,5 +26,5 @@ dict2={"b":10,"d":4}
 print(merge_dictionaries(dict1,dict2))
 
 
-sent="hello my name is hady, hady is my first name , while my last name is kaddourah"
+sent="hello my name is hady , hady is my first name , while my last name is kaddourah"
 print(count_word_freq(sent))
