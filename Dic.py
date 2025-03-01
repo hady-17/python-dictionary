@@ -28,3 +28,16 @@ print(merge_dictionaries(dict1,dict2))
 
 sent="hello my name is hady , hady is my first name , while my last name is kaddourah"
 print(count_word_freq(sent))
+
+
+company_employees = {
+    "Engineering": {
+        "Alice": {"age": 30, "role": "Software Engineer"},
+        "Bob": {"age": 28, "role": "DevOps Engineer"}
+    },
+    "HR": {
+        "Charlie": {"age": 35, "role": "HR Manager"}
+    }
+}
+
+print(count_total_employees(company_employees))
