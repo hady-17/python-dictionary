@@ -53,3 +53,6 @@ company_employees = {
 }
 
 print(count_total_employees(company_employees))
+
+orginal_dic={"a":10,"b":20,"c":10,"d":30}
+print(invert_dic(orginal_dic))
