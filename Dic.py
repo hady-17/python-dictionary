@@ -20,6 +20,18 @@ def count_total_employees(comEmp):
         total+=len(dep)
     return total
 
+def invert_dic(org_dic):
+    #creating new dic 
+    inverted_dic={}
+    for key,value in org_dic.items():
+        #if value in dic we add the key to the array 
+        if value in inverted_dic:
+            inverted_dic[value].append(key)
+        #else value is created as key
+        else:
+            inverted_dic[value]=[key]
+    return inverted_dic
+    
 dict1={"a":1,"b":2,"c":3}
 dict2={"b":10,"d":4}
 
